@@ -1,0 +1,25 @@
+.show-hide-btn {    
+    white-space: nowrap;
+    margin: 24px 24px 24px 0px;
+    background: none;
+    border: none;    
+    font-size: 16px;
+    font-weight: 500;
+    
+    @media (min-width: ($screen-md)) {
+        display: block;
+    }
+
+    & > span {
+
+        &:hover {
+            color: $second-text;                        
+        }
+    }    
+    
+    &__img {
+      margin-right: 16px;
+      transition: transform 1s;
+
+    }
+}

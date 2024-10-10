@@ -1,0 +1,13 @@
+.rule-info {
+    padding: 16px 0px;
+    font-size: 14px;   
+
+    &__link {
+        color: $general-pink;
+
+        &:hover {
+                color: $second-text;
+                text-decoration: underline;        
+        }
+    }
+}

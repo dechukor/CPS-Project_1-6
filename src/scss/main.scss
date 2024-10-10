@@ -1,0 +1,36 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css);
+@import "settings";
+
+@import "./blocks/swiper-personal-settings";
+
+@import "./blocks/primary-btn.scss";
+@import "./blocks/order-btn.scss";
+@import "./blocks/read-more-btn.scss";
+@import "./blocks/show-hide-btn.scss";
+
+@import "./blocks/offer-link.scss";
+
+@import "./blocks/site-container.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/blur-modal.scss";
+@import "./blocks/menu-header.scss";
+@import "./blocks/menu-navigation.scss";
+@import "./blocks/menu-contacts.scss";
+@import "./blocks/email-label.scss";
+@import "./blocks/phone-label.scss";
+@import "./blocks/language-list.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/header-site.scss";
+@import "./blocks/content-container.scss";
+@import "./blocks/chapter_caption.scss";
+@import "./blocks/showcase-section.scss";
+@import "./blocks/choice-section.scss";
+@import "./blocks/price-container.scss";
+@import "./blocks/footer-site.scss";
+@import "./blocks/modal-feedback.scss";
+@import "./blocks/modal-call.scss";
+@import "./blocks/rule-info.scss";

@@ -1,0 +1,18 @@
+.menu-contacts {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 24px 32px 24px;
+
+    &__list {
+    display: flex;
+    margin-bottom: 16px;
+    }
+
+    &__item {
+    margin-left: 16px;
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+}

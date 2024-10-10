@@ -1,0 +1,148 @@
+.choice-section {
+    padding-left: 16px;
+
+    &__header {
+        padding: 16px 16px 16px 0px;
+        background: linear-gradient(90deg, $main-background 1.39%, $header-background 100%);        
+        white-space: normal;
+    }
+
+    &__title {
+        color: $second-text;    
+        font-size: 16px;
+        font-weight: normal;      
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        text-transform: uppercase;
+    }
+
+    &__container {
+        margin-bottom: 14px;
+        
+        @media (min-width: ($screen-md)) {
+            overflow: hidden;
+			height: 200px;
+        }
+
+        &_height_auto {            
+            @media (min-width: ($screen-md)) {
+                height: auto;
+            }
+        }
+    }
+
+    &__list {        
+        margin: 24px 0 16px 0px;    
+        height:fit-content;
+
+        @media (min-width: ($screen-md)) {
+            display: flex;    
+			flex-wrap: wrap;
+			column-gap: 24px;
+			row-gap: 16px;
+        }
+
+        @media (min-width: ($screen-xl)) {
+            column-gap: 32px;
+        }
+
+        &_price {
+            @media (min-width: ($screen-md)) {
+                display: block;
+                width: auto;
+                margin-right: 16px;
+                margin-top: 0px;
+                border-radius: 6px;
+                border: 1px solid $choice-button-border;    
+                background-color: $choice-button-background;
+            }
+            
+            & > div:not(:last-child)::after {
+                @media (min-width: ($screen-md)) {
+                    content: "";						
+                    height: 1px;							
+                    background-color: $main-border;							
+                    display: block;							
+                    margin: 0 16px 0 16px;
+                }                   
+            }                            
+        }    
+    }
+
+    &__item {
+        width: 240px;    
+        padding: 16px 16px 16px 16px;        
+        border-radius: 6px;
+        border: 1px solid $choice-button-border;    
+        background-color: $choice-button-background;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: ($screen-md)) {
+            width: 224px;
+        }
+
+        @media (min-width: ($screen-xl)) {
+            width: 240px;
+        }
+
+        &_brand {
+            height: 72px;
+        }
+
+        &_tech {
+            height: 160px;            
+        }
+        
+        &_price {
+            height: 200px;
+            width: 260px;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            @media (min-width: ($screen-md)) {
+                height: fit-content;
+                width: 100%;					
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                border: none;
+                background: none;
+                border-radius: 0px;
+            }
+
+            @media (min-width: ($screen-xl)) {
+                height: fit-content;
+				width: 100%;					
+				flex-direction: row;
+				justify-content: space-between;	
+            }
+        }
+    }
+
+    &__tech-text {
+        align-self: flex-start;
+        text-align: left;
+    }
+ 
+    &__tech-img {
+        align-self: flex-end;
+        transition: 1s;
+        
+        &:hover {
+            filter: opacity(0.5);
+        }
+    }
+
+    &__footnote {
+        padding: 16px 16px 16px 0px;
+        max-width: 421px;
+        font-family: TT Lakes;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+    }
+}

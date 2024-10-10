@@ -1,0 +1,41 @@
+//Breakpoints
+$screen-md: 768px;
+$screen-xl: 1440px;
+
+//Цвета (фон)
+$body-background: #fbfbfb;
+$main-background: #f8f8f8;
+$header-background: #ffffff;
+$menu-background: $header-background;
+$modal-background: $header-background;
+$choice-button-background: $header-background;
+
+//Цвета(тени)
+$menu-shadow: #0e185033;
+$modal-shadow: $menu-shadow;
+
+//Цвета (границы)
+$main-border: #eaeaea;
+$activ-button-border: #b8ffec;
+$choice-button-border: #ebebeb;
+$footer-border: #D9FFF5;
+
+//Цвета (текст)
+$main-text: #1b1c21;
+$second-text: #7e7e82;
+$placeholder-text: #b5b6bc;
+
+//Цвета (прочее)
+$general-pink: #ff3e79;
+$activ-item-line: #41f6d7;
+$separate-line: $main-border;
+$active-pagination-bullet: $placeholder-text;
+$pagination-bullet: #dddddd;
+
+
+
+
+
+
+
+

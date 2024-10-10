@@ -1,0 +1,41 @@
+.modal-feedback {
+    // display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 320px;
+    height: 100%;
+    background-color: $modal-background;
+    box-shadow: -16px 0px 52px 0px $modal-shadow;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+
+    & .close-modal {
+        align-self: flex-start;
+        margin-top: 24px;
+        margin-left: 16px;
+
+        @media (min-width: ($screen-md)) {
+            position: fixed;
+            z-index: 6;
+            right: 344px;
+            top: 16px;
+        }
+    }
+
+    &__form {        
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+
+        & > .order-btn {
+            align-self: flex-end;
+        }
+        
+        & > input {        
+            // width: 100%;
+            margin-bottom: 16px;           
+        } 
+    }
+}

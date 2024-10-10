@@ -1,0 +1,42 @@
+.header-site {
+    background-color: $header-background;
+
+    @media (min-width: ($screen-xl)) {
+      display: none;
+    }
+  
+    &__menu {
+      display: flex; 
+      align-items: center;
+      height: 88px;  
+      list-style-type: none;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  
+    &__item {
+      margin-left: 16px;
+  
+      &:first-child {
+         margin-left: 0px;
+      }
+  
+      &_pos-right {
+        margin-right: auto;
+      }
+
+      &_visible_tablet {        
+        @media (min-width: ($screen-md)) {
+          display: inline;
+        }
+      }
+    }
+  
+    &__sepline {
+      width: 2px;
+      height: 32px;
+      background-color: $separate-line;
+      margin-left: 4px;
+      margin-right: 4px;
+    }  
+}

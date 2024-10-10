@@ -1,0 +1,31 @@
+.menu-navigation {
+    margin: 0 24px 32px 24px;    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-wrap: nowrap;
+    &__item {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        font-size: 16px;
+        white-space: nowrap;  
+        background: none;
+        border: none;
+        text-align: left;
+
+        &_accent-line::before {    
+            content: "";
+            width: 4px;
+            height: 32px;
+            margin-left: -24px;
+            margin-right: 20px;
+            background-color: $activ-item-line;
+            border-radius: 0px 4px 4px 0px;
+        }    
+    
+        &:focus {
+            color: $second-text; 
+        }   
+    } 
+}

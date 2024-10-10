@@ -1,0 +1,13 @@
+.menu {
+    min-width: 320px;
+    position: relative;
+    background-color: $menu-background;       
+    box-shadow: 16px 0px 52px 0px $menu-shadow;    
+    z-index: 1; 
+
+    @media (min-width: ($screen-xl)) {
+        display: block;
+		position: relative;
+		box-shadow: none;
+    }
+}

@@ -1,0 +1,36 @@
+//Дополнительные настройки для Swiper
+
+.swiper-slide {
+    width: auto;   
+}
+
+.swiper-pagination{
+    position: relative;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: $pagination-bullet;
+    opacity: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background: $active-pagination-bullet;
+}
+
+// Блок-тень справа над слайдом
+.swiper__slide-shadow {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0px;
+    width: 24px;
+    height: 100%;
+    background: linear-gradient(270deg, $main-background 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 1;
+    
+    @media (min-width: ($screen-md)) {
+        display: none;
+    }
+}

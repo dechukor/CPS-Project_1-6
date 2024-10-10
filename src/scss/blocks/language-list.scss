@@ -1,0 +1,24 @@
+.language-list {
+    display: flex;
+    margin-bottom: 32px;
+
+    &__item {
+        margin-left: 7px;
+
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+
+    &__btn {
+        height: 32px;
+        font-size: 16px;
+        white-space: nowrap;  
+        background: none;
+        border: none;
+    
+        &:focus {
+            color: $second-text; 
+        }
+    }
+}

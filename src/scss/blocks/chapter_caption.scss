@@ -1,0 +1,23 @@
+.chapter_caption {
+    margin-top: 24px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 40px;
+        background-color: $activ-item-line;
+        border-radius: 0px 4px 4px 0px;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+}
